@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/mainLayout"
+		android:layout_width="fill_parent" android:layout_height="fill_parent"
+		xmlns:android="http://schemas.android.com/apk/res/android">
+		
+		<RelativeLayout android:layout_height="wrap_content" 
+		android:id="@+id/fromContainer" 
+		android:layout_width="match_parent" 
+		android:layout_alignParentTop="true">
+		
+        <Spinner android:id="@+id/fromUnits"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:layout_alignParentTop="true" 
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/fromLabel"
+        android:layout_marginRight="50dp"/>
+        
+        <EditText android:layout_height="wrap_content" 
+        android:inputType="numberDecimal" 
+        android:layout_width="wrap_content" 
+        android:id="@+id/fromValue" 
+        android:layout_below="@+id/fromUnits" 
+        android:layout_toRightOf="@+id/fromValueLabel" 
+        android:layout_alignRight="@+id/fromUnits"/>
+            <requestFocus></requestFocus>
+        
+        <TextView android:layout_height="wrap_content" 
+        android:paddingRight="5dp" 
+        android:paddingLeft="30dp" 
+        android:layout_width="wrap_content" 
+        android:id="@+id/fromValueLabel" 
+        android:text="Value:" 
+        android:layout_alignBottom="@+id/fromValue" 
+        android:layout_alignParentLeft="true" 
+        android:layout_marginBottom="15dp"/>
+        
+        <TextView android:layout_height="wrap_content" 
+        android:paddingRight="5dp" 
+        android:paddingLeft="30dp" 
+        android:layout_width="wrap_content" 
+        android:id="@+id/fromLabel"
+        android:text="From:" 
+        android:layout_alignBottom="@+id/fromUnits" 
+        android:layout_alignParentLeft="true" 
+        android:layout_marginBottom="15dp"/>
+        
+        </RelativeLayout>
+    	
+    	<Button android:layout_height="wrap_content" 
+    	android:text="Swap" 
+    	android:id="@+id/swapButton" 
+    	android:layout_width="wrap_content" 
+    	android:layout_below="@+id/fromContainer" 
+    	android:layout_centerHorizontal="true"/>
+    	
+    	<RelativeLayout android:layout_height="wrap_content" 
+    	android:id="@+id/toContainer" 
+    	android:layout_width="match_parent" 
+    	android:layout_below="@+id/swapButton">
+    	
+        <Spinner android:id="@+id/toUnits"
+        android:layout_height="wrap_content" 
+        android:layout_width="wrap_content" 
+        android:layout_alignParentTop="true" 
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/toLabel"
+        android:layout_marginRight="50dp"/>
+        
+        <TextView android:layout_height="45dp"  
+        android:layout_width="wrap_content" 
+        android:id="@+id/toValue" 
+        android:layout_below="@+id/toUnits" 
+        android:layout_toRightOf="@+id/toValueLabel" 
+        android:layout_alignRight="@+id/toUnits"
+        android:textColor="@color/black"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp"
+        android:textSize="20sp"
+        android:text="0.0"/>
+            <requestFocus></requestFocus>
+            
+        <TextView android:layout_height="wrap_content" 
+        android:paddingRight="5dp" 
+        android:paddingLeft="30dp" 
+        android:layout_width="wrap_content" 
+        android:id="@+id/toValueLabel" 
+        android:text="Value:" 
+        android:layout_alignBottom="@+id/toValue" 
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="15dp"/>
+        
+        <TextView android:layout_height="wrap_content" 
+        android:paddingRight="5dp" 
+        android:paddingLeft="30dp" 
+        android:layout_width="wrap_content" 
+        android:id="@+id/toLabel" 
+        android:text="To:" 
+        android:layout_alignBottom="@+id/toUnits" 
+        android:layout_alignRight="@+id/toValueLabel" 
+        android:layout_marginBottom="14dp"/>
+        
+    	</RelativeLayout>
+    	
+    </RelativeLayout>
