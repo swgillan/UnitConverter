@@ -30,7 +30,7 @@
         android:paddingLeft="30dp" 
         android:layout_width="wrap_content" 
         android:id="@+id/fromValueLabel" 
-        android:text="Value:" 
+        android:text="@string/value" 
         android:layout_alignBottom="@+id/fromValue" 
         android:layout_alignParentLeft="true" 
         android:layout_marginBottom="15dp"/>
@@ -40,7 +40,7 @@
         android:paddingLeft="30dp" 
         android:layout_width="wrap_content" 
         android:id="@+id/fromLabel"
-        android:text="From:" 
+        android:text="@string/from" 
         android:layout_alignBottom="@+id/fromUnits" 
         android:layout_alignParentLeft="true" 
         android:layout_marginBottom="15dp"/>
@@ -48,7 +48,7 @@
         </RelativeLayout>
     	
     	<Button android:layout_height="wrap_content" 
-    	android:text="Swap" 
+    	android:text="@string/swap" 
     	android:id="@+id/swapButton" 
     	android:layout_width="wrap_content" 
     	android:layout_below="@+id/fromContainer" 
@@ -77,16 +77,14 @@
         android:background="@color/white"
         android:paddingTop="10dp"
         android:paddingLeft="10dp"
-        android:textSize="20sp"
-        android:text="0.0"/>
-            <requestFocus></requestFocus>
+        android:textSize="20sp"/>
             
         <TextView android:layout_height="wrap_content" 
         android:paddingRight="5dp" 
         android:paddingLeft="30dp" 
         android:layout_width="wrap_content" 
         android:id="@+id/toValueLabel" 
-        android:text="Value:" 
+        android:text="@string/value" 
         android:layout_alignBottom="@+id/toValue" 
         android:layout_alignParentLeft="true"
         android:layout_marginBottom="15dp"/>
@@ -96,7 +94,7 @@
         android:paddingLeft="30dp" 
         android:layout_width="wrap_content" 
         android:id="@+id/toLabel" 
-        android:text="To:" 
+        android:text="@string/to" 
         android:layout_alignBottom="@+id/toUnits" 
         android:layout_alignRight="@+id/toValueLabel" 
         android:layout_marginBottom="14dp"/>

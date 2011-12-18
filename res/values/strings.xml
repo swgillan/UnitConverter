@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, UnitConverterActivity!</string>
     <string name="app_name">UnitConverter</string>
+    <string name="value">Value:</string>
+    <string name="from">From:</string>
+    <string name="swap">Swap</string>
+    <string name="to">To:</string>
 </resources>

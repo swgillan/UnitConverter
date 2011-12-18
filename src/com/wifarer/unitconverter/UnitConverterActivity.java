@@ -68,19 +68,19 @@ public class UnitConverterActivity extends Activity {
                 if ((event.getAction() == KeyEvent.ACTION_DOWN) &&
                     (keyCode == KeyEvent.KEYCODE_ENTER)) {
                   // Perform action on key press
-                  UnitConverterActivity.this.performConversion(Double.parseDouble(fromValue.getText().toString()));
+                		UnitConverterActivity.this.performConversion(Double.parseDouble(fromValue.getText().toString()));
                   return true;
                 }
                 return false;
             }
         });
         toValue = (TextView) findViewById(R.id.toValue);
+        toValue.setText("0.0");
         
         toUnits.setSelection(2);
     }
     
     private void performConversion(double parseDouble) {
-		// TODO Auto-generated method stub
 		double convertedValue = parseDouble*fromFactor/toFactor;
 		toValue.setText(""+convertedValue);
     	
